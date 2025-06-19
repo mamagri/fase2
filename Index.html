@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>Mini Mercado Magri</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Projeto.css">
+    <script src="jsProjeto/jsProjeto.js"></script>
+</head>
+
+<body>
+    <!--criação da barra superior-->
+    <div class="menu-topo">
+        <a href="#" onclick="Sair()">
+            <img src="imagens/sair.png" class="imagem-sair" alt="sair">
+        </a>
+        <a href="Formulario.html" class="cadastrar-se">Cadastrar-se</a>
+        <a href="FrutasVerduras.html" class="frutas">Frutas e Verduras</a>
+        <a href="NaoPereciveis.html" class= "nao-pereciveis">Não Perecíveis</a>
+        <a href="HigieneLimpeza.html" class="higiene-limpeza">Higiene e Limpeza</a>
+        <a href="servico.html" class="servico">Serviços</a>
+        <a href="Pedido.html" class="finalizar">Finalizar Pedido</a>
+    </div>
+    <div class="menu-topo-esquerda">
+        <p class="nome-mercado">Mercado Magri</p>
+    </div>
+    <div class="home">
+    <a href="Index.html">
+        <img src="imagens/home.png" class="imagem-home" alt="Home">
+    </a>
+    </div>
+
+    <!-- criação do carousel bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="Imagens/higieneLimpeza.png" alt="produtos de limpeza" class="d-block w-100" alt="Higiene e Limpeza">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="Imagens/NaoPerecivel.png" alt="alimentos não perecíveis" class="d-block w-100" alt="Não Perecíveis">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="imagens/Frutas.png" alt="frutas e verduras" class="d-block w-80 w-100" alt="Frutas">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="imagens/Chaveiro.png" class="d-block w-80 w-100" alt="Chaveiro">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- meios de pagamentos-->
+    <div id="meio-pagamento" class="card">
+        <img src="Imagens/Cartoes.png" alt="formas de pagamentos" class="card-img-top" onclick="meioPagamento()" alt="Meios de Pagamento">
+    </div>
+
+    <!-- oferta -->
+    <div id="oferta" class="card">
+        <img src="Imagens/oferta.png" alt="ofertas" class="card-img-top" onclick="ofertas()" alt="Oferta">
+    </div>
+
+    <!-- manobrista -->
+    <div id="manobrista" class="card">
+        <img src="Imagens/Manobristas.png" alt="Temos manobristas"class="card-img-top" onclick="manobrista()" alt="Manobrista">
+    </div>
+
+    <!-- lavagem -->
+    <div id="lavagem" class="card">
+        <img src="Imagens/lavagem.png" alt="lavamos seu carro enquanto você faz compras"class="card-img-top" onclick="lavagem()" alt="Lavagem">
+    </div>
+
+    <!-- entrega -->
+    <div id="entrega" class="card">
+        <img src="Imagens/entrega.png" alt="temos serviços de entrega" onclick="entrega()" class="card-img-top" alt="Entrega">
+    </div>
+
+    <!-- rodapé da página -->
+    <footer class="rodape">
+        <p class="textoRodape">&copy; 2025 - Magri Tecnologia</p>
+        <p class="textoRodape">Siga-nos:</p>
+
+        <img class="instagram" alt="instagram" src="imagens/instagram.jpg" onclick="redeSocial('Instagram')" alt="instagram">
+        <img class="facebook" alt="facebook" src="imagens/facebook.jpg" onclick="redeSocial('FaceBook')" alt="facebook">
+        <img class="tiktok" alt="tiktok" src="imagens/tiktok.jpg" onclick="redeSocial('TikTok')" alt="tiktok">
+        <img class="x" alt="X, antigo Twitter" src="imagens/x.jpg" onclick="redeSocial('X, antigo Twitter')" alt="X"></a>
+
+        <p class="textoCentralRodape">Qualidade Garantida</p>
+
+        <img class="whatsapp" alt="whatsapp" src="imagens/whatsapp.png" alt="whatsapp">
+        <p class="telefone">(11) 9.9999-9999</p>
+    </footer>
+
+</body>

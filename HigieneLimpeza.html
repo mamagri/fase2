@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>Mini Mercado Magri</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Projeto.css">
+    <script src="jsProjeto/jsProjeto.js"></script>
+</head>
+
+<body>
+
+    <!--criação da barra superior-->
+    <div class="menu-topo">
+        <a href="#" onclick="Sair()">
+            <img src="imagens/sair.png" class="imagem-sair" alt="sair">
+        </a>
+        <a href="Formulario.html" class="cadastrar-se">Cadastrar-se</a>
+        <a href="FrutasVerduras.html" class="frutas">Frutas e Verduras</a>
+        <a href="NaoPereciveis.html" class= "nao-pereciveis">Não Perecíveis</a>
+        <a href="HigieneLimpeza.html" class="higiene-limpeza">Higiene e Limpeza</a>
+        <a href="servico.html" class="servico">Serviços</a>
+        <a href="Pedido.html" class="finalizar">Finalizar Pedido</a>        
+    </div>
+    <div class="menu-topo-esquerda">
+        <p class="nome-mercado">Mercado Magri</p>
+    </div>
+    <div class="home">
+    <a href="Index.html">
+        <img src="imagens/home.png" class="imagem-home" alt="Home">
+    </a>
+    </div>
+
+    <!--frutas-->
+    <img class="veja" src="imagens/veja.png" alt="Veja">
+    <img class="detergente" src="imagens/detergente.png" alt="Detergente">
+    <img class="shampoo" src="imagens/shampoo.png" alt="Shampoo">
+    <img class="sabonete" src="imagens/sabonete.png" alt="Sabonete">
+
+    <!--seleções e botões parte superior -->
+    <select id="qtde1-1" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <button id="compra1-1" type="button" onclick="comprar('Veja','qtde1-1', 'pote(s)')" class="btn btn-primary btn-sm">Adicionar</button>
+
+    <select id="qtde1-2" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <button id="compra1-2" type="button" onclick="comprar('Detergente','qtde1-2', 'pote(s)')" class="btn btn-primary btn-sm">Adicionar</button>
+
+    <select id="qtde1-3" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <button id="compra1-3" type="button" onclick="comprar('Shampoo','qtde1-3', 'pote(s)')" class="btn btn-primary btn-sm">Adicionar</button>    
+
+    <select id="qtde1-4" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <button id="compra1-4" type="button" onclick="comprar('Sabonete','qtde1-4', 'barra(s)')" class="btn btn-primary btn-sm">Adicionar</button>    
+
+    <!-- rodapé da página -->
+    <footer class="rodape">
+        <p class="textoRodape">&copy; 2025 - Magri Tecnologia</p>
+        <p class="textoRodape">Siga-nos:</p>
+
+        <img class="instagram" src="imagens/instagram.jpg" onclick="redeSocial('Instagram')" alt="instagram">
+        <img class="facebook" src="imagens/facebook.jpg" onclick="redeSocial('FaceBook')" alt="facebook">
+        <img class="tiktok" src="imagens/tiktok.jpg" onclick="redeSocial('TikTok')" alt="tiktok">
+        <img class="x" src="imagens/x.jpg" onclick="redeSocial('X, antigo Twitter')" alt="X"></a>
+
+        <p class="textoCentralRodape">Qualidade Garantida</p>
+
+        <img class="whatsapp" src="imagens/whatsapp.png" alt="whatsapp">
+        <p class="telefone">(11) 9.9999-9999</p>
+    </footer>
+
+</body>
