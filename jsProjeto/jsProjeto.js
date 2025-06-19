@@ -34,6 +34,10 @@ function comprar(item, selecao, unidade) {
 }
 
 function finalizarCompra() {
-    alert('Cadastro Efetuado com sucesso!');
+    alert('Compra realizada com sucesso!');
 
+}
+
+function finalizarCadastro() {
+    alert('Cadastro Efetuado com sucesso');
 }
